@@ -158,3 +158,4 @@ $(function()
 <a name="top"></a>
 <div id="page">
 <!-- AJOUTEZ VOTRE CODE HTML EN DESSOUS DE CETTE LIGNE -->
+<h2 id="bann">Agenda de l'Exploitation</h2>
