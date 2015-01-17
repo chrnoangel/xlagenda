@@ -44,6 +44,8 @@ elseif ($menu_proposer) echo "&gt; ".$lang['common_link_proposer']."<br />\n";
 if ($menu_compte AND !is_included($url_compte,$page)) echo "&gt; <a href=\"$url_compte\">".$lang['common_link_compte']."</a>\n";
 elseif ($menu_compte) echo "&gt; ".$lang['common_link_compte']."\n";
 }
+// LIEN ADMINISTRATION
+if ($menu_admin) echo "&gt; <a href=\"$repertoire_admin/index.php\">".$lang['common_link_admin']."</a><br />\n";
 //LIEN DECONNEXION
 if (isSessionValide()) echo "&gt; <a href=\"$repertoire_admin/close.php\">".$lang['common_link_deconnexion']."</a>\n";
 echo "</p>
