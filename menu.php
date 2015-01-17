@@ -37,12 +37,12 @@ echo "&gt; <a href=\"$repertoire_admin/ajouter.php\">".$lang['common_link_ajoute
 }
 else
 {
-if ($menu_ajouter) echo "&gt; <a href=\"$repertoire_admin/index.php\">".$lang['common_link_ajouter']."</a><br />\n";
+if ($menu_ajouter) echo "&gt; <a href=\"$repertoire_admin/index.php?add=yes\">".$lang['common_link_ajouter']."</a><br />\n";
 if ($menu_proposer AND !is_included($url_proposition,$page)) echo "&gt; <a href=\"$url_proposition\">".$lang['common_link_proposer']."</a><br />\n";
 elseif ($menu_proposer) echo "&gt; ".$lang['common_link_proposer']."<br />\n";
 //LIEN DEMANDER UN COMPTE
-if ($menu_compte AND !is_included($url_compte,$page)) echo "&gt; <a href=\"$url_compte\">".$lang['common_link_compte']."</a>\n";
-elseif ($menu_compte) echo "&gt; ".$lang['common_link_compte']."\n";
+if ($menu_compte AND !is_included($url_compte,$page)) echo "&gt; <a href=\"$url_compte\">".$lang['common_link_compte']."</a><br />\n";
+elseif ($menu_compte) echo "&gt; ".$lang['common_link_compte']."<br />\n";
 }
 // LIEN ADMINISTRATION
 if ($menu_admin) echo "&gt; <a href=\"$repertoire_admin/index.php\">".$lang['common_link_admin']."</a><br />\n";
